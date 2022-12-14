@@ -1,0 +1,86 @@
+.header {
+    box-sizing: border-box;
+    padding: 15px 0px;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 3;
+    &_block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &_logo {
+            & img {
+                width: 152px;
+            }
+            &_text {
+                display: none;
+            }
+        }
+        &_rating {
+            display: none;
+        }
+        &_right {
+            &_tel {
+                display: none;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        background-color: transparent;
+        transition: all 0.3s linear;
+        padding: 40px 0px;
+        &.scroll {
+            background-color: #fff;
+            transition: all 0.3s linear;
+        }
+        &_block {
+            &_logo {
+                display: flex;
+                align-items: center;
+                & img {
+                    width: auto;
+                }
+                &_text {
+                    display: block;
+                    margin-left: 26px;
+                    position: relative;
+                    &::after {
+                        content: "";
+                        position: absolute;
+                        left: -13px;
+                        top: 0px;
+                        width: 1px;
+                        height: 100%;
+                        background-color: #004A56;
+                    }
+                    & p {
+                        font-family: 'Gilroy', sans-serif;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 18px;
+                        color: #004A56;
+                    }
+                }
+            }
+            &_rating {
+                display: block;
+            }
+            &_right {
+                &_tel {
+                    box-sizing: border-box;
+                    border: 1px solid #004A56;
+                    width: 40px;
+                    height: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
