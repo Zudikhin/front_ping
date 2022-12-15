@@ -74,6 +74,7 @@
                             z-index: 1;
                         }
                         & img {
+                            width: 80%;
                             transform: rotate(-30deg);
                         }
                     }
@@ -133,6 +134,13 @@
             & img {
                 width: 18px;
                 margin-top: 8px;
+            }
+        }
+    }
+    @media (min-width: 390px) {
+        &_block {
+            &_bottom {
+                transform: translateY(50px);
             }
         }
     }
