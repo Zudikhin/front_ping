@@ -1,0 +1,170 @@
+.lump {
+    box-sizing: border-box;
+    margin-top: 60px;
+    &_block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &_top {
+            border: 2px solid #F6BF00;
+            border-radius: 57px;
+            width: 280px;
+            box-sizing: border-box;
+            padding: 16px 32px;
+            & p {
+                font-family: 'Gilroy';
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: #004A56;
+            }
+        }
+        & h2 {
+            font-family: 'Gilroy';
+            font-style: normal;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 48px;
+            text-align: center;
+            color: #004A56;
+            margin-top: 24px;
+        }
+        &_description {
+            font-family: 'Gilroy';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 19px;
+            text-align: center;
+            color: #004A56;
+            opacity: 0.7;
+            width: 328px;
+            margin-top: 16px;
+        }
+        &_list {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 32px;
+            &_item {
+                box-sizing: border-box;
+                background: #EAF2F6;
+                border-radius: 8px;
+                padding: 0px 17px;
+                height: 34px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0px 4px;
+                margin-top: 8px;
+                & span {
+                    font-family: 'Gilroy';
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 18px;
+                    text-align: center;
+                    color: #004A56;
+                    opacity: 0.3;
+                }
+                &.active {
+                    & span {
+                        opacity: 1;
+                    }   
+                }
+            }
+        }
+    }
+    @media (min-width: 412px) {
+        margin-top: 100px;
+    }
+    @media (min-width: 768px) {
+        &_block {
+            & h2 {
+                margin-top: 24px;
+                & br {
+                    display: none;
+                }
+            }
+            &_list {
+                margin-top: 48px;
+            }
+            &_description {
+                margin-top: 24px;
+            }
+        }
+    }
+    @media (min-width: 810px) {
+        margin-top: 200px;
+    }
+    @media (min-width: 1024px) {
+        margin-top: 300px;
+        &_block {
+            &_top {
+                width: 622px;
+                height: 90px;
+                padding: 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                & p {
+                    font-size: 24px;
+                    line-height: 29px;
+                }
+            }
+            & h2 {
+                font-size: 60px;
+                line-height: 68px;
+            }
+            &_description {
+                width: 100%;
+                font-size: 20px;
+                line-height: 25px;
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        margin-top: 200px;
+        &_block {
+            & h2 {
+                font-size: 80px;
+                line-height: 88px;
+            }
+            &_list {
+                margin-top: 56px;
+                &_item {
+                    height: 60px;
+                    border-radius: 16px;
+                    & span {
+                        font-size: 30px;
+                        line-height: 30px;  
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1366px) {
+        margin-top: 300px;
+    }
+    @media (min-width: 1440px) {
+        margin-top: 100px;
+        &_block {
+            &_list {
+                width: 1320px;
+                &_item {
+                    height: 66px;
+                    & span {
+                        font-size: 35px;
+                        line-height: 35px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1536px) {
+        margin-top: 200px;
+    }
+    @media (min-width: 1920px) {
+        margin-top: 500px;
+    }
+}

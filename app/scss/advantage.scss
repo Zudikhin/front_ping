@@ -1,0 +1,605 @@
+.advantage {
+    margin-top: 80px;
+    & h2 {
+        font-family: 'Gilroy';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 42px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+    &_block {
+        &_list {
+            &_item {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                &_text {
+                    order: 2;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    z-index: 3;
+                    & h4 {
+                        font-family: 'Gilroy';
+                        font-weight: 800;
+                        font-size: 32px;
+                        line-height: 36px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        & br {
+                            display: none;
+                        }
+                    }
+                    & p {
+                        font-family: 'Gilroy';
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        text-align: center;
+                        color: #FFFFFF;
+                        opacity: 0.8;
+                        margin-top: 16px;
+                        & br {
+                            display: none;
+                        }
+                    }
+                }
+                &_img {
+                    order: 1;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    position: relative;
+                    & img {
+                        width: 100%;
+                        position: relative;
+                        z-index: 2;
+                    }
+                }
+                &:first-child {
+                    & .advantage_block_list_item_img {
+                        &::after {
+                            content: "";
+                            width: 352px;
+                            height: 290px;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(145, 233, 244, 0) 100%);
+                            opacity: 0.55;
+                            z-index: 1;
+                        }
+                        & img {
+                            transform: rotate(-30deg);
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    margin-top: 30px;
+                }
+                &:nth-child(4) {
+                    & .advantage_block_list_item_text {
+                        transform: translateY(-50px);
+                    }
+                    & .advantage_block_list_item_img {
+                        display: flex;
+                        & img {
+                            width: 80%;
+                        }
+                    }
+                }
+                &:nth-child(5) {
+                    & .advantage_block_list_item_img {
+                        & img {
+                            width: 80%;
+                        }
+                        &::after {
+                            content: "";
+                            width: 352px;
+                            height: 290px;
+                            position: absolute;
+                            left: 50%;
+                            top: 50%;
+                            transform: translate(-50%, -50%);
+                            background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(145, 233, 244, 0) 100%);
+                            opacity: 0.55;
+                            z-index: 1;
+                        }
+                    }
+                    & .advantage_block_list_item_text {
+                        transform: translateY(-100px);
+                    }
+                }
+            }
+        }
+        &_bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateY(-50px);
+            & h3 {
+                font-family: 'Gilroy';
+                font-style: normal;
+                font-weight: 800;
+                font-size: 48px;
+                line-height: 59px;
+                text-transform: uppercase;
+                color: #FFFFFF;
+            }
+            & img {
+                width: 18px;
+                margin-top: 8px;
+            }
+        }
+    }
+    @media (min-width: 400px) {
+        margin-top: 120px;
+        &_block {
+            &_list {
+                &_item {
+                    margin-top: 50px;
+                    &:nth-child(4) {
+                        margin-top: 0px;
+                    }
+                    &:last-child {
+                        margin-top: 0px;
+                    }
+                }
+            }
+            &_bottom {
+                transform: translateY(-12px);
+            }
+        }
+    }
+    @media (min-width: 576px) {
+        &_block {
+            &_list {
+                &_item {
+                    margin-top: 100px;
+                }
+            }
+        }
+    }
+    @media (min-width: 768px) {
+        margin-top: 82px;
+        &_block {
+            &_list {
+                &_item {
+                    margin-top: 0px;
+                    &:first-child {
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 426px;
+                            }
+                        }
+                        & .advantage_block_list_item_text {
+                            width: 467px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        margin-top: 62px;
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 366px;
+                            }
+                        }
+                        & .advantage_block_list_item_text {
+                            width: 326px;
+                        }
+                    }
+                    &:nth-child(3) {
+                        margin-top: 36px;
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 390px;
+                            }
+                        }
+                        & .advantage_block_list_item_text {
+                            width: 424px;
+                            & p {
+                                width: 326px;
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        & .advantage_block_list_item_img {
+                            margin-top: 11px;
+                            & img {
+                                width: 276px;
+                            }
+                        }
+                        & .advantage_block_list_item_text {
+                            width: 440px;
+                            transform: translateY(-80px);
+                        }
+                    }
+                    &:last-child {
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 175px;
+                            }
+                        }
+                        & .advantage_block_list_item_text {
+                            width: 406px;
+                            transform: translateY(-70px);
+                            & p {
+                                width: 344px;
+                            }
+                        }
+                    }
+                }
+            }
+            &_bottom {
+                transform: translateY(-20px);
+                & h3 {
+                    font-size: 80px;
+                    line-height: 100px;
+                }
+                & img {
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+    @media (min-width: 810px) {
+        margin-top: 150px;
+        &_block {
+            &_list {
+                &_item {
+                    margin-top: 50px;
+                }
+            }
+            &_bottom {
+                transform: translateY(20px);
+            }
+        }
+    }
+    @media (min-width: 1024px) {
+        margin-top: 250px;
+        &_block {
+            &_list {
+                &_item {
+                    &:first-child {
+                        & .advantage_block_list_item_img img {
+                            width: 560px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        & .advantage_block_list_item_img img {
+                            width: 500px;
+                        }
+                    }
+                    &:nth-child(3) {
+                        & .advantage_block_list_item_img img {
+                            width: 490px;
+                        }
+                    }
+                    &:nth-child(4) {
+                        & .advantage_block_list_item_img img {
+                            width: 376px;
+                        }
+                    }
+                    &:last-child {
+                        & .advantage_block_list_item_img img {
+                            width: 276px;
+                        }
+                    }
+                }
+            }
+            &_bottom {
+                transform: translateY(60px);
+            }
+        }
+    }
+    @media (min-width: 1200px) {
+        margin-top: 100px;
+        & h2 {
+            font-size: 80px;
+            line-height: 116px;
+        }
+        &_block {
+            &_list {
+                &_item {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin-top: 0px;
+                    &_text {
+                        align-items: flex-start;
+                        width: 100%;
+                        & h4 {
+                            font-size: 56px;
+                            line-height: 56px;
+                            text-align: left;
+                            & br {
+                                display: block;
+                            }
+                        }
+                        & p {
+                            text-align: left;
+                            font-size: 20px;
+                            line-height: 28px;
+                            & br {
+                                display: block;
+                            }
+                        }
+                    }
+                    &:nth-child(odd) {
+                        & .advantage_block_list_item_text {
+                            order: 1;
+                        }
+                        & .advantage_block_list_item_img {
+                            order: 2;
+                        }
+                    }
+                    &:first-child {
+                        & .advantage_block_list_item_text {
+                            width: 486px;
+                        }
+                    }
+                    &:nth-child(2) {
+                        margin-top: 0px;
+                        & .advantage_block_list_item_text {
+                            width: 428px;
+                        }
+                        & .advantage_block_list_item_img {
+                            transform: translateX(-100px);
+                            & img {
+                                width: 600px;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        margin-top: 0px;
+                        & .advantage_block_list_item_text {
+                            width: 494px;
+                            & p {
+                                width: 100%;
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        & .advantage_block_list_item_text {
+                            transform: translateY(0px);
+                            width: 530px;
+                            margin-left: 200px;
+                        }
+                        & .advantage_block_list_item_img {
+                            margin-top: 0px;
+                            transform: translateY(-60px);
+                            &::after {
+                                content: "";
+                                width: 352px;
+                                height: 290px;
+                                position: absolute;
+                                left: 50%;
+                                top: 50%;
+                                -webkit-transform: translate(-50%, -50%);
+                                transform: translate(-50%, -50%);
+                                background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(145, 233, 244, 0) 100%);
+                                opacity: 0.55;
+                                z-index: 1;
+                            }
+                            & img {
+                                width: 400px;
+                            }
+                        }
+                    }
+                    &:last-child {
+                        & .advantage_block_list_item_text {
+                            width: 484px;
+                            transform: translateX(-90px);
+                            & p {
+                                width: 100%;
+                            }
+                        }
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 320px;
+                            }
+                        }
+                    }
+                }
+            }
+            &_bottom {
+                transform: translateY(40px);
+                & h3 {
+                    font-size: 130px;
+                    line-height: 145px;
+                }
+                & img {
+                    width: 40px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1366px) {
+        margin-top: 180px;
+        &_block {
+            &_list {
+                &_item {
+                    &:first-child {
+                        margin-top: 50px;
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1440px) {
+        &_block {
+            &_list {
+                &_item {
+                    &:first-child {
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 660px;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 660px;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 560px;
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 480px;
+                            }
+                        }
+                    }
+                    &:nth-child(5) {
+                        transform: translateY(-100px);
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 380px;
+                            }
+                        }
+                    }
+                }
+            }
+            &_bottom {
+                transform: translateY(-60px); 
+            }
+        }
+    }
+    @media (min-width: 1536px) {
+        &_block {
+            &_list {
+                &_item {
+                    &:first-child {
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 700px;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 700px;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 600px;
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 520px;
+                            }
+                        }
+                    }
+                    &:nth-child(5) {
+                        transform: translateY(-100px);
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 420px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media (min-width: 1600px) {
+        &_block {
+            &_list {
+                &_item {
+                    &:first-child {
+                        & .advantage_block_list_item_text {
+                            transform: translateX(100px);
+                        }
+                        & .advantage_block_list_item_img {
+                            transform: translateX(100px);
+                            &::after {
+                                width: 670px;
+                                height: 552px;
+                                background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(145, 233, 244, 0) 100%);
+                                opacity: 0.55;
+                            }
+                            & img {
+                                width: 812px;
+                            }
+                        }
+                    }
+                    &:nth-child(2) {
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 684px;
+                            }
+                        }
+                    }
+                    &:nth-child(3) {
+                        & .advantage_block_list_item_text {
+                            transform: translateX(100px);
+                        }
+                        & .advantage_block_list_item_img {
+                            transform: translateX(100px);
+                            & img {
+                                width: 774px;
+                            }
+                        }
+                    }
+                    &:nth-child(4) {
+                        & .advantage_block_list_item_img {
+                            & img {
+                                width: 460px;
+                            }
+                            &::after {
+                                width: 624px;
+                                height: 636px;
+                                background: radial-gradient(50% 50% at 50% 50%, #FFFFFF 0%, rgba(145, 233, 244, 0) 100%);
+                                opacity: 0.55;
+                            }
+                        }
+                        & .advantage_block_list_item_text {
+                            transform: translateX(64px);
+                        }
+                    }
+                    &:nth-child(5) {
+                        transform: translateY(-100px);
+                        & .advantage_block_list_item_img {
+                            transform: translateX(100px);
+                            & img {
+                                width: 480px;
+                            }
+                        }
+                    }
+                }
+            }
+            &_bottom {
+                & h3 {
+                    font-size: 200px;
+                    line-height: 245px;
+                }
+            }
+        }
+    }
+    @media (min-width: 1920px) {
+        margin-top: 280px;
+        &_block {
+            &_bottom {
+                transform: translateY(80px);
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+.point {
+    box-sizing: border-box;
+    background: #EAF2F6;
+    border-radius: 32px;
+    padding: 40px 0px 64px 0px;
+    & h2 {
+        font-family: 'Gilroy';
+        font-weight: 800;
+        font-size: 40px;
+        line-height: 42px;
+        color: #004A56;
+    }
+    &_btns {
+        display: none;
+    }
+}

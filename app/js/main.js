@@ -10,26 +10,17 @@ $(document).ready(function () {
       }
     });
 
-    $('.news_block_slider_block').slick({
+    $('.point_block').slick({
         dots: false,
         infinite: true,
         arrows: true,
         dots: true,
-        slidesToShow: 3,
+        fade: true,
+        slidesToShow: 1,
         speed: 500,
-        fade: false,
         cssEase: 'linear',
-        prevArrow: $('.news_block_slider_prev'),
-        nextArrow: $('.news_block_slider_next'),
-        responsive: [
-            {
-              breakpoint: 1024,
-              settings: {
-                fade: true,
-                slidesToShow: 1
-              }
-            }
-        ]
+        prevArrow: $('.point_btns_prev'),
+        nextArrow: $('.point_btns_next')
     });
     
 });

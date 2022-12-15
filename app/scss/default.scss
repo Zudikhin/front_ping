@@ -24,6 +24,10 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
+html, body {
+  max-width: 100%;
+}
+
 body {
   line-height: 1;
   overflow-x: hidden;
@@ -193,9 +197,6 @@ input:focus {
   display: none;
 }
 
-.back_mob {
-  top: -5%;
-}
 
 @media (min-width: 768px) {
   .back_mob {
