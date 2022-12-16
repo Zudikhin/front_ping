@@ -8,6 +8,7 @@
     <meta name="author" content="Yuriy Zudikhin" />
     <link rel="stylesheet" href="https://cdn.rawgit.com/mfd/09b70eb47474836f25a21660282ce0fd/raw/e06a670afcb2b861ed2ac4a1ef752d062ef6b46b/Gilroy.css">
     <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/nouislider.css">
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -300,7 +301,7 @@
                       <p>От 100 тыс. чел.</p>
                     </div>
 
-                    <div class="point_block_item_right_info_calc_list_item" data-contr="370 000 ₽" data-furniture="от 265 000 ₽" data-fill="от 200 000 ₽" data-sum="от 715 000 ₽">
+                    <div class="point_block_item_right_info_calc_list_item" data-contr="370 000 ₽" data-furniture="от 265 000 ₽" data-fill="от 200 000 ₽" data-sum="от 835 000 ₽">
                       <div class="point_block_item_right_info_calc_list_item_btn"></div>
                       <p>От 1 млн. чел.</p>
                     </div>
@@ -315,11 +316,11 @@
                       </li>
                       <li>
                         <p>Мебель и оборудование:</p>
-                        <span class="contribution">от 265 000 ₽</span>
+                        <span class="furniture">от 265 000 ₽</span>
                       </li>
                       <li>
                         <p>Товарное наполнение:</p>
-                        <span class="contribution">от 200 000 ₽</span>
+                        <span class="fill">от 200 000 ₽</span>
                       </li>
                     </ul>
                   </div>
@@ -384,7 +385,7 @@
                       <p>От 100 тыс. чел.</p>
                     </div>
 
-                    <div class="point_block_item_right_info_calc_list_item" data-contr="370 000 ₽" data-furniture="от 265 000 ₽" data-fill="от 200 000 ₽" data-sum="от 715 000 ₽">
+                    <div class="point_block_item_right_info_calc_list_item" data-contr="370 000 ₽" data-furniture="от 265 000 ₽" data-fill="от 200 000 ₽" data-sum="от 835 000 ₽">
                       <div class="point_block_item_right_info_calc_list_item_btn"></div>
                       <p>От 1 млн. чел.</p>
                     </div>
@@ -399,11 +400,11 @@
                       </li>
                       <li>
                         <p>Мебель и оборудование:</p>
-                        <span class="contribution">от 265 000 ₽</span>
+                        <span class="furniture">от 265 000 ₽</span>
                       </li>
                       <li>
                         <p>Товарное наполнение:</p>
-                        <span class="contribution">от 200 000 ₽</span>
+                        <span class="fill">от 200 000 ₽</span>
                       </li>
                     </ul>
                   </div>
@@ -431,8 +432,628 @@
       </div>
     </section>
 
+    <section class="calculator">
+      <div class="container">
+        <div class="calculator_block">
+          <div class="calculator_block_top">
+            <h2>Калькулятор прибыли</h2>
+            <div class="calculator_block_top_item">
+              <p>Нужна подробная фин. модель? Оставьте заявку</p>
+              <div class="calculator_block_top_item_btn">
+                <img src="img/calculator/icon.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="calculator_block_list">
+
+            <div class="calculator_block_list_item">
+              <h5>Выручка</h5>
+              <div class="calculator_block_list_item_range" id="revenue"></div>
+              <input type="text" placeholder="50 000 ₽" id="revenue_num" readonly>
+            </div>
+
+            <div class="calculator_block_list_item">
+              <h5>Количество чеков</h5>
+              <div class="calculator_block_list_item_range" id="quantity"></div>
+              <input type="text" placeholder="30 чеков" id="quantity_num" readonly>
+            </div>
+
+            <div class="calculator_block_list_item">
+              <h5>Средний чек</h5>
+              <div class="calculator_block_list_item_range" id="average"></div>
+              <input type="text" placeholder="350 ₽" id="average_num" readonly>
+            </div>
+
+          </div>
+          <div class="calculator_block_final">
+            <p>Ваша прибыль в месяц будет составлять</p>
+            <div class="calculator_block_final_block">
+              <span class="calculator_block_final_block_sum">503000</span>
+              <p>руб.</p>
+            </div>
+          </div>
+          <div class="calculator_block_btn">
+            <span>Стать партнером</span>
+            <img src="img/calculator/icon.svg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="support">
+      <div class="container">
+        <h2>Поддержка</h2>
+        <div class="support_block">
+          <div class="support_block_item">
+            <img src="img/support/1.png" alt="">
+            <h3>Бизнес-консультант</h3>
+            <p>Каждый ваш вопрос будет решаться силами всей управляющей компании, а персональный менеджер поможет решить любую задачу</p>
+          </div>
+          <div class="support_block_item">
+            <img src="img/support/2.png" alt="">
+            <h3>Передовой маркетинг</h3>
+            <p>Все современные инструменты: SMM-материалы, дизайн-команда и онлайн реклама за счёт компании</p>
+          </div>
+          <div class="support_block_item">
+            <img src="img/support/3.png" alt="">
+            <h3>База знаний</h3>
+            <p>Коммерческо-техническая документация, инструкции и много другое собраны в доступном месте</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="rating">
+      <div class="container">
+        <h2>Рейтинги</h2>
+        <div class="rating_wrap">
+
+          <a href="#" class="rating_wrap_item">
+            <div class="rating_wrap_item_img">
+              <img src="img/rating/1.png" alt="">
+            </div>
+            <h3>Топ 2021 г.</h3>
+            <div class="rating_wrap_item_text">
+              <p>Топ-франшиза Forbes 2021</p>
+            </div>
+            <div class="rating_wrap_item_link">
+              <span>Посмотреть на сайте</span>
+            </div>
+          </a>
+
+          <a href="#" class="rating_wrap_item">
+            <div class="rating_wrap_item_img">
+              <img src="img/rating/1.png" alt="">
+            </div>
+            <h3>Топ 2020 г.</h3>
+            <div class="rating_wrap_item_text">
+              <p>Топ-франшиза Forbes 2020</p>
+            </div>
+            <div class="rating_wrap_item_link">
+              <span>Посмотреть на сайте</span>
+            </div>
+          </a>
+
+          <a href="#" class="rating_wrap_item">
+            <div class="rating_wrap_item_img">
+              <img src="img/rating/1.png" alt="">
+            </div>
+            <h3>Топ 2018 г.</h3>
+            <div class="rating_wrap_item_text">
+              <p>Топ-франшиза Forbes 2018</p>
+            </div>
+            <div class="rating_wrap_item_link">
+              <span>Посмотреть на сайте</span>
+            </div>
+          </a>
+
+          <a href="#" class="rating_wrap_item">
+            <div class="rating_wrap_item_img">
+              <img src="img/rating/2.png" alt="">
+            </div>
+            <h3>1-е место</h3>
+            <div class="rating_wrap_item_text">
+              <p>Топ-100 франшиз России 2021 <br> и 2022 в сфере «Кафе и рестораны» <br> по версии TopFranchise</p>
+            </div>
+            <div class="rating_wrap_item_link">
+              <span>Посмотреть на сайте</span>
+            </div>
+          </a>
+
+          <a href="#" class="rating_wrap_item">
+            <div class="rating_wrap_item_img">
+              <img src="img/rating/2.png" alt="">
+            </div>
+            <h3>3-е место</h3>
+            <div class="rating_wrap_item_text">
+              <p>Топ-100 франшиз России <br> 2021 и 2022 вне зависимости от сферы <br> деятельности по версии TopFranchise</p>
+            </div>
+            <div class="rating_wrap_item_link">
+              <span>Посмотреть на сайте</span>
+            </div>
+          </a>
+
+          <a href="#" class="rating_wrap_item">
+            <div class="rating_wrap_item_img">
+              <img src="img/rating/3.png" alt="">
+            </div>
+            <h3>Топ-100</h3>
+            <div class="rating_wrap_item_text">
+              <p>Участник топ-100 франшиз России <br> 2018 по версии портала БИБОСС</p>
+            </div>
+            <div class="rating_wrap_item_link">
+              <span>Посмотреть на сайте</span>
+            </div>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+        <h2>Отзывы</h2>
+        <div class="reviews_wrap">
+
+          <div class="reviews_wrap_item">
+            <div class="reviews_wrap_item_top">
+              <div class="reviews_wrap_item_top_icon">
+                <img src="img/reviews/icon_1.jpeg" alt="">
+              </div>
+              <div class="reviews_wrap_item_top_text">
+                <h5>Василий Петров</h5>
+                <div class="reviews_wrap_item_top_text_city">
+                  <span>г. Москва</span>
+                </div>
+                <p>С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+              </div>
+            </div>
+            <p class="reviews_wrap_item_mob">С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+            <iframe width="100%" src="https://www.youtube.com/embed/BVwOH1BzxC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+  
+          <div class="reviews_wrap_item">
+            <div class="reviews_wrap_item_top">
+              <div class="reviews_wrap_item_top_icon">
+                <img src="img/reviews/icon_2.jpeg" alt="">
+              </div>
+              <div class="reviews_wrap_item_top_text">
+                <h5>Иван Иванов</h5>
+                <div class="reviews_wrap_item_top_text_city">
+                  <span>г. Челябинск</span>
+                </div>
+                <p>С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+              </div>
+            </div>
+            <p class="reviews_wrap_item_mob">С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+            <iframe width="100%" src="https://www.youtube.com/embed/BVwOH1BzxC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+  
+          <div class="reviews_wrap_item">
+            <div class="reviews_wrap_item_top">
+              <div class="reviews_wrap_item_top_icon">
+                <img src="img/reviews/icon_2.jpeg" alt="">
+              </div>
+              <div class="reviews_wrap_item_top_text">
+                <h5>Дмитрий Смирнов</h5>
+                <div class="reviews_wrap_item_top_text_city">
+                  <span>г. Донецк</span>
+                </div>
+                <p>С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+              </div>
+            </div>
+            <p class="reviews_wrap_item_mob">С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+            <iframe width="100%" src="https://www.youtube.com/embed/BVwOH1BzxC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+  
+          <div class="reviews_wrap_item">
+            <div class="reviews_wrap_item_top">
+              <div class="reviews_wrap_item_top_icon">
+                <img src="img/reviews/icon_1.jpeg" alt="">
+              </div>
+              <div class="reviews_wrap_item_top_text">
+                <h5>Василий Петров</h5>
+                <div class="reviews_wrap_item_top_text_city">
+                  <span>г. Москва</span>
+                </div>
+                <p>С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+              </div>
+            </div>
+            <p class="reviews_wrap_item_mob">С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+            <iframe width="100%" src="https://www.youtube.com/embed/BVwOH1BzxC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+  
+          <div class="reviews_wrap_item">
+            <div class="reviews_wrap_item_top">
+              <div class="reviews_wrap_item_top_icon">
+                <img src="img/reviews/icon_2.jpeg" alt="">
+              </div>
+              <div class="reviews_wrap_item_top_text">
+                <h5>Иван Иванов</h5>
+                <div class="reviews_wrap_item_top_text_city">
+                  <span>г. Челябинск</span>
+                </div>
+                <p>С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+              </div>
+            </div>
+            <p class="reviews_wrap_item_mob">С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+            <iframe width="100%" src="https://www.youtube.com/embed/BVwOH1BzxC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+  
+          <div class="reviews_wrap_item">
+            <div class="reviews_wrap_item_top">
+              <div class="reviews_wrap_item_top_icon">
+                <img src="img/reviews/icon_2.jpeg" alt="">
+              </div>
+              <div class="reviews_wrap_item_top_text">
+                <h5>Дмитрий Смирнов</h5>
+                <div class="reviews_wrap_item_top_text_city">
+                  <span>г. Донецк</span>
+                </div>
+                <p>С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+              </div>
+            </div>
+            <p class="reviews_wrap_item_mob">С другой стороны рамки и место обучения кадров в значительной степени обуславливает создание существенных финансовых и административных условий.</p>
+            <iframe width="100%" src="https://www.youtube.com/embed/BVwOH1BzxC4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </div>
+  
+        </div>
+        <div class="container">
+          <div class="reviews_prev">
+            <img src="img/reviews/prev.svg" alt="">
+          </div>
+          <div class="reviews_next">
+            <img src="img/reviews/next.svg" alt="">
+          </div> 
+        </div>
+        
+      </div>
+    </section>
+
+    <section class="quiz">
+      <div class="container">
+        <div class="quiz_block">
+          <div class="quiz_block_top">
+            <p>Вопрос <span class="start">1</span> из 6</p>
+            <div class="quiz_block_top_line">
+              <div class="quiz_block_top_line_default"></div>
+              <div class="quiz_block_top_line_fill"></div>
+            </div>
+          </div>
+          <div class="quiz_block_wrap">
+
+            <div class="quiz_block_wrap_item quiz_block_wrap_one active">
+              <h2>В каком городе вы хотите открыться?</h2>
+              <div class="quiz_block_wrap_item_input">
+                <input id="city" type="text" placeholder="Введите свой город...">
+              </div>              
+              <button class="quiz_block_wrap_item_btn quiz_block_wrap_one_btn">
+                <span>Далее</span>
+              </button>
+            </div>
+
+            <div class="quiz_block_wrap_item quiz_block_wrap_two">
+              <h2>Какой формат франшизы вас интересует?</h2>
+
+              <div class="quiz_block_wrap_item_list">
+                <div class="quiz_block_wrap_item_list_item active">
+                  <span>Стационарная точка</span>
+                </div>
+                <div class="quiz_block_wrap_item_list_item">
+                  <span>Кафе</span>
+                </div>
+                <div class="quiz_block_wrap_item_list_item">
+                  <span>Нужна консультация</span>
+                </div>
+              </div>
+
+              <button class="quiz_block_wrap_item_btn quiz_block_wrap_two_btn">
+                <span>Далее</span>
+              </button>
+            </div>
+
+            <div class="quiz_block_wrap_item quiz_block_wrap_three">
+              <h2>Когда хотите открыться?</h2>
+
+              <div class="quiz_block_wrap_item_list">
+                <div class="quiz_block_wrap_item_list_item">
+                  <span>Через 1-2 месяца</span>
+                </div>
+                <div class="quiz_block_wrap_item_list_item active">
+                  <span>Сейчас</span>
+                </div>
+                <div class="quiz_block_wrap_item_list_item">
+                  <span>В течение года</span>
+                </div>
+                <div class="quiz_block_wrap_item_list_item">
+                  <span>Еще не определился</span>
+                </div>
+              </div>
+
+              <button class="quiz_block_wrap_item_btn quiz_block_wrap_three_btn">
+                <span>Далее</span>
+              </button>
+            </div>
+
+            <div class="quiz_block_wrap_item quiz_block_wrap_four">
+              <h2>Какой у вас опыт?</h2>
+
+              <div class="quiz_block_wrap_item_list">
+                <div class="quiz_block_wrap_item_list_item active">
+                  <span>Уже работал с франшизами</span>
+                </div>
+                <div class="quiz_block_wrap_item_list_item">
+                  <span>Хочу попробовать</span>
+                </div>
+                <div class="quiz_block_wrap_item_list_item">
+                  <span>Есть свой бизнес</span>
+                </div>
+              </div>
+
+              <button class="quiz_block_wrap_item_btn quiz_block_wrap_four_btn">
+                <span>Далее</span>
+              </button>
+            </div>
+
+            <div class="quiz_block_wrap_item quiz_block_wrap_five">
+              <h2>С какой целью оставляете заявку?</h2>
+
+              <div class="quiz_block_wrap_item_list">
+                <div class="quiz_block_wrap_item_list_item active">
+                  <span>Получить презентацию</span>
+                </div>
+                <div class="quiz_block_wrap_item_list_item">
+                  <span>Получить консультацию</span>
+                </div>
+                <div class="quiz_block_wrap_item_list_item">
+                  <span>Приобрести франшизу</span>
+                </div>
+              </div>
+
+              <button class="quiz_block_wrap_item_btn quiz_block_wrap_five_btn">
+                <span>Далее</span>
+              </button>
+            </div>
+
+            <div class="quiz_block_wrap_item quiz_block_wrap_six">
+              <h2>С какой целью оставляете заявку?</h2>
+
+              <div class="quiz_block_wrap_item_input">
+                <span>Имя</span>
+                <input id="name" type="text" placeholder="Как вас зовут?">
+              </div>
+
+              <div class="quiz_block_wrap_item_input">
+                <span>Телефон</span>
+                <input id="tel" type="tel" placeholder="Куда вам можно будет позвонить?">
+              </div>
+
+              <div class="quiz_block_wrap_item_input">
+                <span>Почта</span>
+                <input id="email" type="email" placeholder="Какой у вас адрес электронной почты?">
+              </div>
+              
+              <button class="quiz_block_wrap_item_btn quiz_block_wrap_six_btn">
+                <span>Далее</span>
+              </button>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer_block">
+          <a class="footer_block_logo" href="#">
+            <img src="img/footer/logo.svg" alt="">
+          </a>
+          <ul>
+            <li>
+              <a href="#">Основной сайт</a>
+            </li>
+            <li>
+              <a href="#">О франшизе</a>
+            </li>
+            <li>
+              <a href="#">Торговые точки</a>
+            </li>
+            <li>
+              <a href="#">Посчитать прибыль</a>
+            </li>
+          </ul>
+          <div class="footer_block_social">
+            <a href="#">
+              <img class="default" src="img/footer/vk_default.svg" alt="">
+              <img class="hover" src="img/footer/vk_hover.svg" alt="">
+            </a>
+            <a href="#">
+              <img class="default" src="img/footer/yt_default.svg" alt="">
+              <img class="hover" src="img/footer/yt_hover.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal_nav">
+      <button class="modal_nav_close">
+        <img src="img/footer/close.svg" alt="">
+      </button>
+      <ul>
+        <li>
+          <span class="about_nav">О франшизе</span>
+        </li>
+        <li>
+          <span class="point_nav">Торговые точки</span>
+        </li>
+        <li>
+          <span class="cash_nav">Посчитать прибыль</span>
+        </li>
+        <li class="form_nav">
+          <span>Оставить заявку</span>
+        </li>
+      </ul>
+      <div class="modal_nav_social">
+        <a href="#">
+          <img class="default" src="img/footer/vk_default.svg" alt="">
+          <img class="hover" src="img/footer/vk_hover.svg" alt="">
+        </a>
+        <a href="#">
+          <img class="default" src="img/footer/yt_default.svg" alt="">
+          <img class="hover" src="img/footer/yt_hover.svg" alt="">
+        </a>
+      </div>
+    </div>
+
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/nouislider.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
+
+
+
+<!-- 
+
+Выручка = кол-во покупок*средний чек
+Кол-во покупок = выручка/средний чек
+Средний чек = выручка/кол-во чеков
+
+Прибыль = 0,3*выручки = 180510 руб 
+
+-->
+
+<script>
+
+  var connectRevenue = document.getElementById('revenue');
+
+  noUiSlider.create(connectRevenue, {
+      start: 300000,
+      step: 300000,
+      range: {
+        'min': 300000,
+        'max': 2100000
+      }
+  });
+
+  var connectQuantity = document.getElementById('quantity');
+
+  noUiSlider.create(connectQuantity, {
+    start: 1,
+    step: 1,
+    range: {
+      'min': 1,
+      'max': 3000
+    }
+  });
+
+  var connectAverage = document.getElementById('average');
+
+  noUiSlider.create(connectAverage, {
+    start: 10,
+    step: 10,
+    range: {
+      'min': 1000,
+      'max': 350000
+    }
+  });
+
+
+  connectRevenue.noUiSlider.on('update', function( values, handle ) {
+    var value = Math.round(connectRevenue.noUiSlider.get());
+    var text = value + ' ₽';
+    $("#revenue_num").val(text);
+    // var quantity = connectQuantity.noUiSlider.get();
+    var final = 0.3 * value;
+    $(".calculator_block_final_block_sum").text(final);
+    // var average = connectAverage.noUiSlider.get();
+    // var quantity = value/average;
+    // connectQuantity.noUiSlider.set(quantity);
+  });
+
+  connectQuantity.noUiSlider.on('update', function( values, handle ) {
+    var value = Math.round(connectQuantity.noUiSlider.get());
+    var text = value + ' чеков';
+    $("#quantity_num").val(text);
+    // var average = connectAverage.noUiSlider.get();
+    // var revenue = average*value;
+    // connectRevenue.noUiSlider.set(revenue);
+  });
+
+  connectAverage.noUiSlider.on('update', function( values, handle ) {
+    var value = Math.round(connectAverage.noUiSlider.get());
+    var text = value + ' ₽';
+    $("#average_num").val(text);
+    // var quantity = connectQuantity.noUiSlider.get();
+    // var revenue = quantity*value;
+    // connectRevenue.noUiSlider.set(revenue);
+  });
+
+  
+
+</script>
+
+<script>
+
+  $(".quiz_block_wrap_one_btn").click(function() {
+    if($("#city").val().length === 0) {
+      $("#city").addClass("error");
+    } else {
+      $(".start").text("2");
+      $(".quiz_block_top_line_fill").css("width", "32.2%");
+      $(".quiz_block_wrap_one").removeClass("active");
+      $(".quiz_block_wrap_two").addClass("active");
+    }
+  });
+
+  $(".quiz_block_wrap_two_btn").click(function() {
+    $(".quiz_block_wrap_two").removeClass("active");
+    $(".quiz_block_wrap_three").addClass("active");
+    $(".quiz_block_top_line_fill").css("width", "50%");
+    $(".start").text("3");
+  });
+
+  $(".quiz_block_wrap_three_btn").click(function() {
+    $(".quiz_block_wrap_three").removeClass("active");
+    $(".quiz_block_wrap_four").addClass("active");
+    $(".quiz_block_top_line_fill").css("width", "66.6%");
+    $(".start").text("4");
+  });
+
+  $(".quiz_block_wrap_four_btn").click(function() {
+    $(".quiz_block_wrap_four").removeClass("active");
+    $(".quiz_block_wrap_five").addClass("active");
+    $(".quiz_block_top_line_fill").css("width", "83.2%");
+    $(".start").text("5");
+  });
+
+  $(".quiz_block_wrap_five_btn").click(function() {
+    $(".quiz_block_wrap_five").removeClass("active");
+    $(".quiz_block_wrap_six").addClass("active");
+    $(".quiz_block_top_line_fill").css("width", "100%");
+    $(".start").text("6");
+  });
+
+  
+  $(".quiz_block_wrap_six_btn").click(function() {
+    if(!$('#name').val()) {
+      $("#name").addClass("error");
+    } else {
+      $("#name").removeClass("error");
+    }
+    if (!$('#tel').val()) {
+      $("#tel").addClass("error");
+    } else {
+      $("#tel").removeClass("error");
+    }
+    if (!$('#email').val()) {
+        $("#email").addClass("error");
+    } else {
+        $("#email").removeClass("error");
+    }
+  });
+
+</script>

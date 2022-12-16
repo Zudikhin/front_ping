@@ -69,6 +69,13 @@
             }
         }
     }
+    @media (min-width: 384px) {
+        &_block {
+            &_video {
+                margin-top: 100px;
+            }
+        }
+    }
     @media (min-width: 400px) {
         margin-top: 500px;
     }

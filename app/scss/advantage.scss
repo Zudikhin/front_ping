@@ -137,10 +137,23 @@
             }
         }
     }
+    @media (min-width: 384px) {
+        &_block {
+            &_list {
+                &_item {
+                    &:first-child {
+                        .advantage_block_list_item_img {
+                            margin-top: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
     @media (min-width: 390px) {
         &_block {
             &_bottom {
-                transform: translateY(50px);
+                transform: translateY(30px);
             }
         }
     }
@@ -159,7 +172,7 @@
                 }
             }
             &_bottom {
-                transform: translateY(-12px);
+                transform: translateY(-30px);
             }
         }
     }
