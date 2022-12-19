@@ -1,5 +1,7 @@
 .about {
     margin-top: 400px;
+    position: relative;
+    z-index: 3;
     &_block {
         display: flex;
         flex-direction: column;

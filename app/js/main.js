@@ -10,12 +10,14 @@ $(document).ready(function () {
       }
     });
 
-    $(document).mouseup( function(e){ // событие клика по веб-документу
-      var div = $(".modal_nav"); // тут указываем ID элемента
-      if ( !div.is(e.target) && div.has(e.target).length === 0 ) { // и не по его дочерним элементам
-        $(".modal_nav").removeClass("active");
-        $("body").removeClass("scroll");
-        $(".header_block_right_drop").removeClass("scroll");
+    $(document).mouseup(function(e) {
+      if($(window).width() > 1199) {
+        var div = $(".modal_nav");
+        if ( !div.is(e.target) && div.has(e.target).length === 0 ) {
+          $(".modal_nav").removeClass("active");
+          $("body").removeClass("scroll");
+          $(".header_block_right_drop").removeClass("scroll");
+        }
       }
     });
 
