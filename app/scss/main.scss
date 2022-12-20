@@ -1,3 +1,43 @@
+@keyframes drawArc {
+    0%{ transform: rotate(-150deg) translateX(200px) rotate(150deg);  }
+    100% { transform: rotate(0deg) translateX(200px) rotate(0deg) ;}
+}
+
+@media (min-width: 410px) {
+    @keyframes drawArc {
+        0%{ transform: rotate(-150deg) translateX(220px) rotate(150deg);  }
+        100% { transform: rotate(0deg) translateX(220px) rotate(0deg) ;}
+    }
+}
+
+@media (min-width: 768px) {
+    @keyframes drawArc {
+        0%{ transform: rotate(-50deg) translateX(600px) rotate(50deg);  }
+        100% { transform: rotate(0deg) translateX(600px) rotate(0deg) ;}
+    }
+}
+
+@media (min-width: 1024px) {
+    @keyframes drawArc {
+        0%{ transform: rotate(-150deg) translateX(500px) rotate(150deg);  }
+        100% { transform: rotate(0deg) translateX(500px) rotate(0deg) ;}
+    }
+}
+
+@media (min-width: 1200px) {
+    @keyframes drawArc {
+        0%{ transform: rotate(-100deg) translateX(500px) rotate(100deg);  }
+        100% { transform: rotate(0deg) translateX(500px) rotate(0deg) ;}
+    }
+}
+
+@media (min-width: 1920px) {
+    @keyframes drawArc {
+        0%{ transform: rotate(-80deg) translateX(550px) rotate(80deg);  }
+        100% { transform: rotate(0deg) translateX(550px) rotate(0deg) ;}
+    }
+}
+
 .main {
     position: relative;
     box-sizing: border-box;
@@ -9,7 +49,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        z-index: 3;
+        z-index: 4;
         & h1 {
             font-family: 'Gilroy';
             font-weight: 800;
@@ -72,14 +112,16 @@
             right: 0px;
             top: -550px;
             width: 562px;
-            // transform: rotateX(-30%);
             transform: translateX(25%);
+            z-index: 3;
         }
         & .tablet {
             display: none;
+            z-index: 3;
         }
         & .desktop {
             display: none;
+            z-index: 3;
         }
         &_pen {
             position: absolute;
@@ -87,6 +129,41 @@
             top: -280px;
             transform: translateX(-50%);
             width: 240px;
+            z-index: 4;
+        }
+        &_sun {
+            width: 172px;
+            height: 172px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            left: 50px;
+            top: -500px;
+            animation: drawArc 2s linear forwards;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                width: 100%;
+                height: 100%;
+                box-sizing: border-box;
+                border-radius: 50%;
+                background: rgba(255, 255, 255, 0.6);
+                filter: blur(50px);
+            }
+            &_inner {
+                width: 90px;
+                height: 90px;
+                box-sizing: border-box;
+                border-radius: 50%;
+                background: #FFD649;
+                position: relative;
+                z-index: 2;
+            }   
         }
     }
     @media (min-width: 390px) {
@@ -117,6 +194,10 @@
             &_pen {
                 top: -80px;
             }
+            &_sun {
+                top: -330px;
+                left: 100px;
+            }
         }
     }
     @media (min-width: 768px) {
@@ -142,6 +223,11 @@
             }
             &_pen {
                 top: -250px;
+            }
+            &_sun {
+                top: -500px;
+                left: 0px;
+
             }
         }
     }
@@ -171,6 +257,10 @@
                 position: absolute;
                 top: -455px;
                 transform: translateX(0px);
+            }
+            &_sun {
+                top: -370px;
+                left: 300px;
             }
         }
     }
@@ -216,6 +306,11 @@
                 left: auto;
                 transform: translateX(0px);
             }
+            &_sun {
+                top: 100px;
+                left: 600px;
+                animation: drawArc 2s linear forwards;
+            }
         }
     }
     @media (min-width: 1366px) {
@@ -231,6 +326,10 @@
                 right: -90px;
                 top: -44px;
             }
+            &_sun {
+                top: 150px;
+                left: 650px;
+            }
         }
     }
     @media (min-width: 1440px) {
@@ -242,6 +341,10 @@
                 top: 250px;
                 right: 150px;
             }
+            &_sun {
+                top: 200px;
+                left: 750px;
+            }
         }
     }
     @media (min-width: 1536px) {
@@ -251,6 +354,10 @@
             }
             &_pen {
                 top: 310px;
+            }
+            &_sun {
+                top: 215px;
+                left: 830px;
             }
         }
     }
@@ -264,6 +371,10 @@
                 top: 350px;
                 right: 200px;
             }
+            &_sun {
+                top: 240px;
+                left: 870px;
+            }
         } 
     }
     @media (min-width: 1680px) {
@@ -276,6 +387,10 @@
                 top: 380px;
                 right: 200px;
             }
+            &_sun {
+                top: 280px;
+                left: 910px;
+            }
         }
     }
     @media (min-width: 1920px) {
@@ -287,6 +402,10 @@
             &_pen {
                 top: 500px;
                 right: 320px;
+            }
+            &_sun {
+                top: 400px;
+                left: 970px;
             }
         }
     }

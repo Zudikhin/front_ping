@@ -27,6 +27,8 @@
         &_video {
             position: relative;
             margin-top: 66px;
+            height: 200px;
+            width: 100%;
             &_pin {
                 position: absolute;
                 right: -23px;
@@ -38,6 +40,42 @@
                 position: relative;
                 z-index: 2;
                 border-radius: 12px;
+                height: 100%;
+                object-fit: cover;
+            }
+            & iframe {
+                height: 100%;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                height: 100%;
+                border-radius: 15px;
+                box-sizing: border-box;
+            }
+            &_play {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                background: #FFD02D;
+                transition: all 0.3s linear;
+                width: 58px;
+                height: 58px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 2;
+                border-radius: 50%;
+                box-sizing: border-box;
+                cursor: pointer;
+                & img {
+                    width: 24px;
+                    transform: translateX(3px);
+                }
+                &:hover {
+                    background: #FFDD68;
+                    transition: all 0.3s linear;
+                }
             }
         }
         &_list {
@@ -83,6 +121,11 @@
     }
     @media (min-width: 412px) {
         margin-top: 550px;
+        &_block {
+            &_video {
+                height: 220px;
+            }
+        }
     }
     @media (min-width: 442px) {
         margin-top: 470px;
@@ -103,16 +146,22 @@
             width: 450px;
             &_list {
                 &_item {
+                    margin-top: 35px;
                     &:first-child {
                         margin-top: 56px;
                     }
                 }
             }
             &_video {
+                height: 250px;
                 &_pin {
                     width: 200px;
                     right: -112px;
                     top: -90px;
+                }
+                &_play {
+                    width: 70px;
+                    height: 70px;
                 }
             }
         }
@@ -170,6 +219,7 @@
             }
             &_video {
                 width: 664px;
+                height: 373px;
                 &_main {
                     border-radius: 56px;
                 }
@@ -178,6 +228,13 @@
                     top: auto;
                     bottom: -75px;
                     right: -170px;
+                }
+                &_play {
+                    width: 144px;
+                    height: 144px;
+                    & img {
+                        width: 40px;
+                    }
                 }
             }
         }
@@ -190,6 +247,7 @@
         &_block {
             &_video {
                 width: 750px;
+                height: 422px;
                 &_pin {
                     width: 400px;
                     bottom: -119px;
@@ -207,6 +265,7 @@
             &_video {
                 margin-top: 150px;
                 width: 864px;
+                height: 486px;
             }
         }
     }

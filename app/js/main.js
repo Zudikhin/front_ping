@@ -1,6 +1,26 @@
 $(document).ready(function () {
     "use strict";
 
+    const inViewport = (elem) => {
+      let allElements = document.getElementsByClassName(elem);
+      let windowHeight = window.innerHeight;
+      const elems = () => {
+          for (let i = 0; i < allElements.length; i++) {  //  loop through the sections
+              let viewportOffset = allElements[i].getBoundingClientRect();  //  returns the size of an element and its position relative to the viewport
+              let top = viewportOffset.top;  //  get the offset top
+              if(top < windowHeight){  //  if the top offset is less than the window height
+                  allElements[i].classList.add('animation');  //  add the class
+              } else{
+                  allElements[i].classList.remove('in-viewport');  //  remove the class
+              }
+          }
+      }
+      elems();
+      window.addEventListener('scroll', elems);
+    }
+  
+    inViewport("anime");
+
     $(window).scroll(function() {    
       var scroll = $(window).scrollTop();
       if (scroll > 50) {
@@ -42,7 +62,7 @@ $(document).ready(function () {
       $("body").removeClass("scroll");
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".about").offset().top - 150
-      }, 2000);
+      }, 0);
     });
 
     $(".point_nav").click(function() {
@@ -51,7 +71,7 @@ $(document).ready(function () {
       $("body").removeClass("scroll");
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".point").offset().top - 150
-      }, 2000);
+      }, 0);
     });
 
     $(".cash_nav").click(function() {
@@ -60,7 +80,7 @@ $(document).ready(function () {
       $("body").removeClass("scroll");
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".calculator").offset().top - 150
-      }, 2000);
+      }, 0);
     });
 
 
@@ -70,38 +90,51 @@ $(document).ready(function () {
       $("body").removeClass("scroll");
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".quiz").offset().top - 150
-      }, 2000);
+      }, 0);
     });
 
 
     $(".main_block_btns_item-call").click(function() {
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".quiz").offset().top - 150
-      }, 2000);
+      }, 0);
     });
 
     $(".main_block_btns_item-investment").click(function() {
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".lump").offset().top - 150
-      }, 2000);
+      }, 0);
     });
 
     $(".point_block_item_right_info_btn").click(function() {
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".quiz").offset().top - 150
-      }, 2000);
+      }, 0);
     });
 
     $(".calculator_block_top_item_btn").click(function() {
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".quiz").offset().top - 150
-      }, 2000);
+      }, 0);
     });
 
     $(".calculator_block_btn").click(function() {
       $([document.documentElement, document.body]).animate({
         scrollTop: $(".quiz").offset().top - 150
-      }, 2000);
+      }, 0);
+    });
+
+
+    $(".about_block_video_main").click(function() {
+      $(this).css("display", "none");
+      $(".about_block_video_play").css("display", "none");
+      $(".about_block_video").append('<iframe id="about_block_video_frame" width="100%" height="100%" src="https://www.youtube.com/embed/Gyy_dTIIpaI?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
+    });
+
+    $(".about_block_video_play").click(function() {
+      $(this).css("display", "none");
+      $(".about_block_video_main").css("display", "none");
+      $(".about_block_video").append('<iframe id="about_block_video_frame" width="100%" height="100%" src="https://www.youtube.com/embed/Gyy_dTIIpaI?autoplay=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>');
     });
 
 
